@@ -1,0 +1,13 @@
+div{
+    color: blue !important;
+}
+.mydiv{
+    color: brown ;
+}
+#abcd{
+    color: aqua;
+}
+/* Yahan pe sabse jyada priority abcd heading ki honi chahiye , uske baad mydiv class ki
+   ans last me div element ki
+   BUT , if there is !important written in whichever block , that will become at top most
+   priority */

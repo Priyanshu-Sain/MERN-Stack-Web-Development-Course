@@ -1,0 +1,89 @@
+.navbar{
+    height: 80px;
+    /* width: 200px; */
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    background-color: #FFC017;
+    position: fixed; /*Navbar fixed rehta hai isliye kiya and ye krne k baad wo corner 
+    me chla jata hai isliye top,left,width deni pdi*/
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+
+}
+.nav-logo{
+    height: 100%;
+    width: 150px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-links{
+    height: 100%;
+    width: 550px;
+    font-size: 22px;
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-image{
+    height: 90%;
+    width: 350px;
+    /* border: 1px solid black; */
+    background-image: url("https://logos-world.net/wp-content/uploads/2023/07/Medium-Logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 30% 0;
+}
+.navitems{
+    text-decoration: none;
+    
+}
+.navitems:visited{
+    color: black;
+}
+.getstartedbutton{
+    height: 40%;
+    width: 107px;
+    color: white;
+    font-size: 18px;
+    background-color: black;
+    position: relative;
+    border: 0px;
+}
+.getstartedbutton:hover{
+    cursor: pointer;
+}
+.circle-1,
+.circle-2{
+    height: 100%;
+    width: 50px;
+    /* border: 1px solid blue; */
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    background-color: black;
+
+}
+.circle-1{
+    left: -20px;
+}
+.circle-2{
+    right: -19px;
+}
+.buttonkaspan{
+    height: 50%;
+    width: 100%;
+    font-size: 16px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    z-index: 1;
+}
+

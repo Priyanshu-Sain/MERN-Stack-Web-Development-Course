@@ -1,0 +1,26 @@
+/* 
+Text : First block in css box model which have a text
+Padding : The distance between the text and border of that text block
+Border : The boundary which surrounds the text block
+Margin : The distance between the heading and border OR it is the outer footpath area which
+         separates our home's border from the main road 
+*/
+.para{
+    /* syntax of writing border : width type color */
+    border: 2px solid red;
+    padding: 25px;
+    margin-top: 30px;
+    /* border and margin can be given different in different directions by border-top , 
+       border-bottom , border-left , margin-bottom etc. 
+       Types of a border : solid,dashed,dotted
+    */
+
+    /* Shorthand Notations : 
+    1) padding : 2px 3px 4px 5px
+       This will assign values in the order of clock i.e. top,right,bottom,left 
+    2) padding : 2px 3px
+       This will assign values 2px to both top and bottom AND 3px to both left and right*/
+    
+    
+    
+}

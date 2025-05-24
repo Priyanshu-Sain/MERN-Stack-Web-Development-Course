@@ -1,0 +1,41 @@
+body{
+    perspective: 800px;
+}
+.parent{
+    width: 300px;
+    height: 350px;
+    /* border: 5px solid red; */
+    margin: auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition-duration: 3s;
+}
+.child-1{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid green; */
+    background-color: blanchedalmond;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+}
+.text{
+    margin-top: 170px;
+    font-size: 22px;
+}
+.child-2{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    /* background-color: turquoise; */
+    background-image: url('https://static.tnn.in/thumb/msid-117324465,thumbsize-64968,width-1280,height-720,resizemode-75/117324465.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    transform: rotateY(180deg);
+}
+.parent:hover{
+    transform: rotateY(180deg);
+}

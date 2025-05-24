@@ -1,0 +1,18 @@
+
+.parent{
+    border: 5px solid black;
+    min-height: 400px;
+    margin: auto;
+    
+}
+.child{
+    border: 5px solid red;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    /*Now , ye body k respect me move krega*/
+    top: 20px;
+    right: 50px;
+
+
+}

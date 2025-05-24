@@ -1,0 +1,24 @@
+/* 
+                              CSS PROPERTIES
+1)Font Size - Represent in pixels(px)
+2)Font Family - 1.Serif
+                2.San-Serif
+                3.Priority Order = 'Gill sans' , 'gill sans mt' , calibri , sans-serif
+                Upar dekho...jinme space hai whi single quoted me likhe hain baki nhi
+3)
+4)
+*/
+body{
+    font-family: sans-serif;
+}
+h{
+    font-size: 30px;
+}
+p{
+    font-size: 28px;
+    line-height: 1.5;
+}
+.authorities,
+.zooanimals{
+    font-size: 28px;
+}

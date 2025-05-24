@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ADDING ELEMENTS</title>
+</head>
+<body>
+    <button class="button">Click To Add Elements</button>
+    <ul class="movie-list">
+
+    </ul>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
+<!-- 
+-> Adding elements by updating inner HTML is taking large complexity as all the existing
+   HTML refreshes and then next HTML gets added resulting in O(N^2) T.C.
+   SO , the solution is :-
+   Create child and then append child in the parent instead of updating the inner
+   HTML of the parent
+   
+-->

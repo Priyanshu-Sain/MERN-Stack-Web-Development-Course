@@ -1,0 +1,45 @@
+<!-- 
+* CSS LIKHNE KE TAREEKE :
+    ->INLINE : Elements ke attribute me CSS likhna
+    ->INTERNAL : Jo style hum HTML file ke head me likhte hain. style tag lgao uske baad likho
+                 ->This is used to provide styling to entire class or id's
+    ->EXTERNAL
+* Slectors are of three types : 
+    ->Id : This is unique for every element
+    ->Class : This represents a group of elements and multiple elements can have same classname
+              ->Classes help in providing styling to multiple elements in one go
+    ->Element Selector : This selector selects a particular type of elements
+                        -> Div selects all the div's in code
+                        -> ul selects all the ul's in the code
+* An element can have multiple classes.But how to mention them ?
+  -> Mention all the classes linked with that element by separating them with a space(___)
+     e.g. <h1 id = "123" class = "class1 class2">Ex</h1> . This has 2 classes {class1 , class2}
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        /* Agar puri class ko style dena hai toh use dot(.) representation
+           And for Id's , we use hash(#) representation */
+        .my-element{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="intro" class="my-element">About Myself</h1>
+    <!-- Lorem in an element to generate random garbage text -->
+    <div id="mydiv" class="my-element">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, quas!</div>
+    <ul id="myul" class="my-element">
+        Lords
+        <li>Hanuman Ji</li>
+        <li>Shri Ram Ji</li>
+        <li>Lakshmi ji</li>
+        <li>Mahadev Ji</li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+.trending-heading{
+    margin-top: 150px;
+    height: 25px;
+    display: flex;
+    text-align: center;
+}
+.trending-text{
+    font-size: 18px;
+
+}
+.trending-image{
+    height: 20px;
+    width: 50px;
+    content: url('https://www.nicepng.com/png/detail/49-492925_circle-arrow-trend-up-icon.png');
+
+
+}
+.articles-container{
+    width: 100%;
+    margin-top: 20px;
+    
+    display: flex;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 20px;
+}
+.article{
+    width: 30%;
+    height: 80px;
+    /* border: 1px solid black; */
+    /* font-family: sans-serif;
+    font-weight: bold; */
+    display: flex;
+    gap: 10px;
+}
+.article-no{
+    font-size: 28px;
+    color: #ccc;
+
+}
+.article-content{
+    /* margin-top: 5px; */
+    flex-grow: 1;
+
+}
+.top-part-of-article{
+    display: flex;
+
+}
+.top-part-of-article img{
+    height: 30px;
+    width: 40px;
+
+}
+.middle-part-article-text{
+    font-weight: 600;
+}
+.article-read-time::after{
+    content: "\2B50";
+}
+.bottom-part-of-article{
+    font-size: 14px;
+    color: #828080;
+}
+.LinkingSpan{
+    position: relative;
+
+}
+.ToBeLinked{
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    top: -26px;
+    right: -303px;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 1;
+    display: none;
+}
+.LinkingSpan:hover{
+    cursor: pointer;
+}
+.LinkingSpan:hover .ToBeLinked{
+    display: block;
+}

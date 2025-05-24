@@ -1,0 +1,40 @@
+.container-heading{
+    font-size: 90px;
+    font-weight: 150;
+    margin-top: 200px;
+    height: 50px;
+
+}
+.container-text{
+    font-size: 20px;
+    width: 350px;
+    margin-top: 0px;
+    height: 70px;
+
+
+}
+.container-button{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    width: 160px;
+    padding: 10px 2px;
+    font-size: 20px;
+    border: 0px;
+
+}
+.container-button:hover{
+    cursor: pointer;
+}
+
+.yellow-container{
+    height: 550px;
+    width: 100%;
+    margin-bottom: 150px;
+    background-color: #FFC017;
+    position: absolute;
+    border: 1px solid black;
+    top: 0px;
+    left: 0px;
+   z-index: -1;
+}

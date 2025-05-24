@@ -1,0 +1,441 @@
+<!-- 
+Do div hain agar unko parallel me lana hai to unko ek parent div me daalo use display flex kardo
+and uske children ki ab orientation manage kar skte ho . Alternative to float
+LVHA : Link visited Hover Active
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Medium Clone FrontEnd</title>
+
+    <style>
+        .container{
+            width: 1200px;
+            margin: auto;
+            margin-top: 100px;
+            margin-bottom: 200px;
+        }
+        .separation-line{
+            border: 1px solid #ccc;
+            margin-top: 50px;
+            width: 126.5%;
+            position: relative;
+            left: -160px;
+            /* top: 842px; */
+            /* right: -15px; */
+        }
+        
+    </style>
+    <link rel="stylesheet" href="Navcss.css">
+    <link rel="stylesheet" href="container-elements-css.css">
+    <link rel="stylesheet" href="articlescss.css">
+    <link rel="stylesheet" href="DetailedArticles.css">
+</head>
+<body>
+    <!-------------------------- NAVBAR STARTS ---------------------------------- -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <div class="nav-image"></div>
+        </div>
+        <div class="nav-links">
+            <a class="navitems" href="#">Our Story</a>
+            <a class="navitems" href="#">Membership</a>
+            <a class="navitems" href="#">Write</a>
+            <a class="navitems" href="#">Sign In</a>
+            <button class="getstartedbutton">
+                <!-- <span class="buttonkaspan">Get Started</span> -->
+                <div class="buttonkaspan">Get Started</div>
+<!--Yahan humne button ko circular ebds dene k liye do div is tarah se lgayi ki unka
+    border radius 50% karke circular bnn gye fir dono ko position absolute di and left
+    right move krake button k aage peeche lga diya to it appears to be ki button circular ends ka hogya
+    # ALTERNATIVE TO THIS :-
+      Actual div elements na lagake pseudo elements bhi lga skte hain and that can be done
+      using container::before and container::after and humne div use kiya tha to in dono 
+      pseudo elements ko display: block kardo div ki tarah hi behave krenge and same
+      absolute position deke left right move kara do -->
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+            </button>
+            
+        </div>
+    </nav>
+    <!------------------------NAVBAR ENDS----------------------- -->
+
+
+
+
+
+
+
+    <!------------------- CONTAINER STARTS--------------------------------------- -->
+    
+    <!-- CONTAINER KE EK UPAR WALE HISSE KO BACKGROUND COLOUR ORANGE DENA HAI
+         TO USKE LIYE EK ALAG CONTAINER BANAO OR JITNI HEIGHT ME CHAHIYE BSS USI K LIYE
+         ADD KARDO COLOUR OR AAGE KA FONT KUCH CHUPE NA ISLIYE Z INDEX : -1 HOGA -->
+
+
+
+    <!-- ------------------------YELLOW CONTAINER STARTS------------------------ -->
+     <div class="yellow-container"></div>
+     <!-- ------------------------YELLOW CONTAINER ENDS------------------------ -->
+
+
+    <!-------------------- Main Container Continues------------------------------ -->
+
+
+
+    <div class="container">
+        <div class="container-1">
+        <h1 class="container-heading">Stay curious.</h1>
+        <div class="container-text">Discover stories, thinking, and expertise from writers on any topic.</div>
+        <button class="container-button">Start reading</button>
+
+        </div>
+
+
+
+    <!-- CONTAINER KA EK PART DONE HOGYA YELLOW BACKGROUND ME AB USKE AAGE KA ARTICL
+         -ES WALA SECTION STARTS NOW----------------------------------------- -->
+    
+    
+    <div class="trending-heading">
+        <span class="trending-image"></span>
+        <div class="trending-text">Trending on Medium</div>
+        
+    </div>
+    <!-- Trending heading done , now comes articles section -->
+
+     <div class="articles-container">
+        <!-- CHILD-1 -->
+        <div class="article">
+            <div class="article-no">01</div>
+            <div class="article-content">
+                <div class="top-part-of-article">
+                    <img src="https://www.indiantelevision.com/sites/default/files/images/tv-images/2023/05/25/toi-logo.jpg" alt="">
+                    <div class="img-k-baad-ka-text"><span class="LinkingSpan">Thi-Lam-Thuy LE
+                        <div class="ToBeLinked">Lorem iostrum dolorem exercitationem laborum facilis fugit ea consequuntur tenetur et.</div>
+                    </span> in <span>TowardsData Science</span></div>
+                </div>
+                <div class="middle-part-article-text">
+                    
+                    I Quit Murdering People For 7 Days . Here's What Happened.
+                </div>
+                <div class="bottom-part-of-article">
+                    <span class="article-date">Jan 16</span>&nbsp;&sdot;&nbsp;
+                    <span class="article-read-time">3 min read</span>
+                </div>
+
+            </div>
+        </div>
+        <!-- CHILD-2 -->
+        <div class="article">
+            <div class="article-no">02</div>
+            <div class="article-content">
+                <div class="top-part-of-article">
+                    <img src="https://www.indiantelevision.com/sites/default/files/images/tv-images/2023/05/25/toi-logo.jpg" alt="">
+                    <div class="img-k-baad-ka-text"><span class="LinkingSpan">Thi-Lam-Thuy LE
+                        <div class="ToBeLinked">Lorem iostrum dolorem exercitationem laborum facilis fugit ea consequuntur tenetur et.</div>
+                    </span> in <span>TowardsData Science</span></div>
+                </div>
+                <div class="middle-part-article-text">
+                    
+                    GRAP 3 Curbs Reinstated in Delhi-NCR as Air Quality Remains Severe
+                </div>
+                <div class="bottom-part-of-article">
+                    <span class="article-date">Jan 16</span>&nbsp;&sdot;&nbsp;
+                    <span class="article-read-time">3 min read</span>
+                </div>
+                
+            </div>
+        </div>
+        <!-- CHILD-3 -->
+        <div class="article">
+            <div class="article-no">03</div>
+            <div class="article-content">
+                <div class="top-part-of-article">
+                    <img src="https://www.indiantelevision.com/sites/default/files/images/tv-images/2023/05/25/toi-logo.jpg" alt="">
+                    <div class="img-k-baad-ka-text"><span class="LinkingSpan">Thi-Lam-Thuy LE
+                        <div class="ToBeLinked">Lorem iostrum dolorem exercitationem laborum facilis fugit ea consequuntur tenetur et.</div>
+                    </span> in <span>TowardsData Science</span></div>
+                </div>
+                <div class="middle-part-article-text">
+                   
+                    PM Modi Hails Completion of Genome India Project.
+                </div>
+                <div class="bottom-part-of-article">
+                    <span class="article-date">Jan 16</span>&nbsp;&sdot;&nbsp;
+                    <span class="article-read-time">3 min read</span>
+                </div>
+                
+            </div>
+        </div>
+        <!-- CHILD-4 -->
+        <div class="article">
+            <div class="article-no">04</div>
+            <div class="article-content">
+                <div class="top-part-of-article">
+                    <img src="https://www.indiantelevision.com/sites/default/files/images/tv-images/2023/05/25/toi-logo.jpg" alt="">
+                    <div class="img-k-baad-ka-text"><span class="LinkingSpan">Thi-Lam-Thuy LE
+                        <div class="ToBeLinked">Lorem iostrum dolorem exercitationem laborum facilis fugit ea consequuntur tenetur et.</div>
+                    </span> in <span>TowardsData Science</span></div>
+                </div>
+                <div class="middle-part-article-text">
+                    
+                    US Envoy Hints at Modi-Trump Meetings in 2025
+                </div>
+                <div class="bottom-part-of-article">
+                    <span class="article-date">Jan 03</span>&nbsp;&sdot;&nbsp;
+                    <span class="article-read-time">09 min read</span>
+                </div>
+                
+            </div>
+        </div>
+        <!-- CHILD-5 -->
+        <div class="article">
+            <div class="article-no">05</div>
+            <div class="article-content">
+                <div class="top-part-of-article">
+                    <img src="https://www.indiantelevision.com/sites/default/files/images/tv-images/2023/05/25/toi-logo.jpg" alt="">
+                    <div class="img-k-baad-ka-text"><span class="LinkingSpan">Thi-Lam-Thuy LE
+                        <div class="ToBeLinked">Lorem iostrum dolorem exercitationem laborum facilis fugit ea consequuntur tenetur et.</div>
+                    </span> in <span>TowardsData Science</span></div>
+                </div>
+                <div class="middle-part-article-text">
+                    
+                    Chimney Collapses at Steel Plant in Chhattisgarh; Several Feared Trapped
+                </div>
+                <div class="bottom-part-of-article">
+                    <span class="article-date">Dec 08</span>&nbsp;&sdot;&nbsp;
+                    <span class="article-read-time">1 min read</span>
+                </div>
+                
+            </div>
+        </div>
+        <!-- CHILD-6 -->
+        <div class="article">
+            <div class="article-no">06</div>
+            <div class="article-content">
+                <div class="top-part-of-article">
+                    <img src="https://www.indiantelevision.com/sites/default/files/images/tv-images/2023/05/25/toi-logo.jpg" alt="">
+                    <div class="img-k-baad-ka-text"><span class="LinkingSpan">Thi-Lam-Thuy LE
+                        <div class="ToBeLinked">Lorem iostrum dolorem exercitationem laborum facilis fugit ea consequuntur tenetur et.</div>
+                    </span> in <span>TowardsData Science</span></div>
+                </div>
+                <div class="middle-part-article-text">
+                    
+                    Government Launches Nationwide TB Screening Campaign in Prisons.
+                </div>
+                <div class="bottom-part-of-article">
+                    <span class="article-date">Feb 16</span>&nbsp;&sdot;&nbsp;
+                    <span class="article-read-time">8 min read</span>
+                </div>
+                
+            </div>
+        </div>
+     </div>
+
+
+
+
+
+
+<!---------------------------Articles Section Ends Here------------------------- -->
+
+
+<div class="separation-line"></div>
+
+
+
+<!------------------------- Detailed Articles Starts Here----------------------- -->
+<div class="parent-container">
+    <div class="articles-details">
+        <div class="article-1">
+            <div class="articles-text">
+                <div class="firstpart">
+                    <img class="authorkiImage" src="https://static.wixstatic.com/media/7d5b6a_f378ea0e687c4fb895760a1e7212ecc5~mv2.jpg/v1/fill/w_1067,h_1067,al_c,q_85/author-professional-headshot-pose-reference-prop.jpg" alt="">
+                    &nbsp;<span class="authorName">Polly Mackintosh</span>
+                </div>
+                <div class="secondpart">"Medicine: Is sober dancing the new ecstasy?"</div>
+                <div class="thirdpart">I'm on a boat in Amsterdam.It's 8pm on a Friday and the walls are already wet with condensation. The topless man next to me is...</div>
+                <div class="fourth-part">
+                    <span class="posting-date">Jan 7</span>&nbsp;&sdot;&nbsp;
+                    <span class="time">6 min read</span>&nbsp;&sdot;&nbsp;
+                    <span class="category">Dance</span>
+                </div>
+    
+            </div>
+            <div class="article1-image">
+    
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="article-2">
+            <div class="articles-text">
+                <div class="firstpart">
+                    <img class="authorkiImage" src="https://pics.cdn.librarything.com/picsizes/7d/93/7d9368eb70309226367636b3767414942774141_v5.jpg" alt="">
+                    &nbsp;<span class="authorName">Michelle Wiles</span>
+                </div>
+                <div class="secondpart">Stanley hype and Samba cringe: Why products fall in and out of style</div>
+                <div class="thirdpart">I'm on a boat in Amsterdam.It's 8pm on a Friday and the walls are already wet with condensation. The topless man next to me is...</div>
+                <div class="fourth-part">
+                    <span class="posting-date">Jan 7</span>&nbsp;&sdot;&nbsp;
+                    <span class="time">6 min read</span>&nbsp;&sdot;&nbsp;
+                    <span class="category">Lamao</span>
+                </div>
+    
+            </div>
+            <div class="article2-image">
+    
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="article-3">
+            <div class="articles-text">
+                <div class="firstpart">
+                    <img class="authorkiImage" src="https://images.gr-assets.com/authors/1533567453p8/12694277.jpg" alt="">
+                    &nbsp;<span class="authorName">Prof Bill Buchanan OBE in ASecuritySite:When Bob Met Alice</span>
+                </div>
+                <div class="secondpart">Is Barbie's Password 'uiff;rnl'?</div>
+                <div class="thirdpart">I'm on a boat in Amsterdam.It's 8pm on a Friday and the walls are already wet with condensation. The topless man next to me is...</div>
+                <div class="fourth-part">
+                    <span class="posting-date">Jan 7</span>&nbsp;&sdot;&nbsp;
+                    <span class="time">6 min read</span>&nbsp;&sdot;&nbsp;
+                    <span class="category">Ethical</span>
+                </div>
+    
+            </div>
+            <div class="article3-image">
+    
+            </div>
+
+        </div>
+
+
+
+
+        <div class="article-4">
+            <div class="articles-text">
+                <div class="firstpart">
+                    <img class="authorkiImage" src="https://images.squarespace-cdn.com/content/v1/6176daf1156c8f7ecda2607f/1697143246366-3N07XHW8R7FFZ6C0Q51F/RoastPodcast_Kat.jpg?format=1500w" alt="">
+                    &nbsp;<span class="authorName">Robert H William</span>
+                </div>
+                <div class="secondpart">Is Australia's Economy Changing Drastically?</div>
+                <div class="thirdpart">I'm on a boat in Amsterdam.It's 8pm on a Friday and the walls are already wet with condensation. The topless man next to me is...</div>
+                <div class="fourth-part">
+                    <span class="posting-date">Jan 7</span>&nbsp;&sdot;&nbsp;
+                    <span class="time">6 min read</span>&nbsp;&sdot;&nbsp;
+                    <span class="category">Social</span>
+                </div>
+    
+            </div>
+            <div class="article4-image">
+    
+            </div>
+
+        </div>
+
+
+
+
+        <div class="article-5">
+            <div class="articles-text">
+                <div class="firstpart">
+                    <img class="authorkiImage" src="https://helios-i.mashable.com/imagery/authors/06zCn1kSynj5isBSHseBSiH/image.fill.size_1200x1200.v1667595155.jpg" alt="">
+                    &nbsp;<span class="authorName">R.L.Hooke</span>
+                </div>
+                <div class="secondpart">Authorities vow action after cars torched, home vandalized in latest antisemitic attack in Australia</div>
+                <div class="thirdpart">I'm on a boat in Amsterdam.It's 8pm on a Friday and the walls are already wet with condensation. The topless man next to me is...</div>
+                <div class="fourth-part">
+                    <span class="posting-date">Jan 7</span>&nbsp;&sdot;&nbsp;
+                    <span class="time">6 min read</span>&nbsp;&sdot;&nbsp;
+                    <span class="category">Cryptography</span>
+                </div>
+    
+            </div>
+            <div class="article5-image">
+    
+            </div>
+
+        </div>
+
+
+
+
+        <div class="article-6">
+            <div class="articles-text">
+                <div class="firstpart">
+                    <img class="authorkiImage" src="http://logoshi.com/img/blog/author-c.png" alt="">
+                    &nbsp;<span class="authorName">Xylie Hampton</span>
+                </div>
+                <div class="secondpart">“We will lock you up”</div>
+                <div class="thirdpart">I'm on a boat in Amsterdam.It's 8pm on a Friday and the walls are already wet with condensation. The topless man next to me is...</div>
+                <div class="fourth-part">
+                    <span class="posting-date">Jan 7</span>&nbsp;&sdot;&nbsp;
+                    <span class="time">6 min read</span>&nbsp;&sdot;&nbsp;
+                    <span class="category">Marketing</span>
+                </div>
+    
+            </div>
+            <div class="article6-image">
+    
+            </div>
+
+        </div>
+        
+
+
+
+
+        
+  
+    </div>
+    <div class="articles-filters">
+        <div class="filters-heading">Discover more of what matters to you</div>
+        <div class="filters-parent">
+            <button class="child">Programmimg</button>
+            <button class="child">Data Science</button>
+            <button class="child">Technology</button>
+            <button class="child">Self Improvement</button>
+            <button class="child">Writing</button>
+            <button class="child">Relationships</button>
+            <button class="child">Machine Learning</button>
+            <button class="child">Productivity</button>
+            <button class="child">Politics</button>
+        </div>
+         <div>
+           <a class="MoreTopicsLink" href="#">See more topics</a>
+         </div>
+
+        <div class="LastParentDiv">
+            <button class="options">Help</button>
+            <button class="options">Status</button>
+            <button class="options">About</button>
+            <button class="options">Careers</button>
+            <button class="options">Blog</button>
+            <button class="options">Privacy</button>
+            <button class="options">Terms</button>
+            <button class="options">Text to speech</button>
+            <button class="options">Teams</button>
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+    
+</body>
+</html>

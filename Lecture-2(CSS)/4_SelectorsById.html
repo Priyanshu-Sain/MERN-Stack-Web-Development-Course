@@ -1,0 +1,63 @@
+<!-- 
+* CSS LIKHNE KE TAREEKE :
+    ->INLINE : Elements ke attribute me CSS likhna
+    ->INTERNAL : Jo style hum HTML file ke head me likhte hain. style tag lgao uske baad likho
+                 ->This is used to provide styling to entire class or id's
+    ->EXTERNAL : HTML file alag hogi and uski linked CSS file alag hogi , toh readability
+                increase hojati h. Use "link:css" feature to link the css file with html file
+* Slectors are of three types : 
+    ->Id : This is unique for every element
+    ->Class : This represents a group of elements and multiple elements can have same classname
+              ->Classes help in providing styling to multiple elements in one go
+    ->Element Selector : This selector selects a particular type of elements
+                        -> Div selects all the div's in code
+                        -> ul selects all the ul's in the code
+* An element can have multiple classes.But how to mention them ?
+  -> Mention all the classes linked with that element by separating them with a space(___)
+     e.g. <h1 id = "123" class = "class1 class2">Ex</h1> . This has 2 classes {class1 , class2}
+* Priority/Specificity Order : Element_selector < Classes < Id < Inline Command
+                               Agar element ke attribute me CSS likhi hai  to whi top priority pe hai whi apply hogi
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        /* Agar puri class ko style dena hai toh use dot(.) representation
+           And for Id's , we use hash(#) representation */
+        .my-element{
+            color: white;
+            background-color: black;
+        }
+        #intro{
+            color: brown;
+            background-color: aqua;
+            /* Ye id ki CSS defined kari hai..Or ye beshak class2 se pehle hai par 
+               id ki priority jyada hoti hai to iski properties apply hongi jis element 
+               ko bhi ye id mili hogi i.e."intro" */
+        }
+        .class2{
+            color: purple;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ye neeche isme teen classes hain and 2 classes ki different CSS define krdi to konsi apply hogi ? 
+         Ans :- Code flow is top to down . So , last me jonsi class ki CSS hogi uski properties
+                apply ho jayngi.
+         -->
+    <h1 id="intro" class="my-element class2 class3">About Myself</h1>
+    <!-- Lorem in an element to generate random garbage text -->
+    <div id="mydiv" class="my-element class3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, quas!</div>
+    <ul id="myul" class="class2">
+        Lords
+        <li>Hanuman Ji</li>
+        <li>Shri Ram Ji</li>
+        <li>Lakshmi ji</li>
+        <li>Mahadev Ji</li>
+    </ul>
+    
+</body>
+</html>

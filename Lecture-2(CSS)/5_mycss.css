@@ -1,0 +1,19 @@
+/* Agar puri class ko style dena hai toh use dot(.) representation
+           And for Id's , we use hash(#) representation 
+   * While writing CSS externally , the style tags are not used     */
+        .my-element{
+            color: white;
+            background-color: black;
+        }
+        #intro{
+            color: brown;
+            background-color: aqua;
+            /* Ye id ki CSS defined kari hai..Or ye beshak class2 se pehle hai par 
+               id ki priority jyada hoti hai to iski properties apply hongi jis element 
+               ko bhi ye id mili hogi i.e."intro" */
+        }
+        .class2{
+            color: purple;
+            background-color: cadetblue;
+        }
+    

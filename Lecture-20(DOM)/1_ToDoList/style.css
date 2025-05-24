@@ -1,0 +1,58 @@
+*{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+.inp{
+    width: 60%;
+
+}
+.btn{
+    color: rgb(248, 248, 37);
+    background-color: black;
+    width: 20%;
+    border: 0px;
+    border-radius: 20px;
+
+}
+.btn,
+.up-btn,
+.down-btn,
+.cross:hover{
+    cursor: pointer;
+}
+.task-item{
+    margin: 10px auto;
+    
+
+}
+.up-btn,
+.down-btn,
+.cross{
+    color: white;
+    background-color: blueviolet;
+    width: 130px;
+    border: 0px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+/* top ka up button and bottom ka down button hide kro */
+li:first-child .up-btn,
+li:last-child .down-btn{
+    display: none;
+}
+body{
+    
+    background-color: aquamarine;
+}
+.title{
+    /* width: 1500px;
+    margin: auto; */
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+<!-- 
+* There are two ways to inset an image file in the html :-
+  1) Make a div , Use the img tag and adding the link of the image in the src section.
+  2) Div bnake chhod do usme link mat daalo , instead is div ki class upar define kro
+     or usme link daalo image ka background-image me jaake...URL type krke
+     -> In this case , providing the class height, width,size and repeat is mandatory
+    Therefore, for inserting the images in a fixed size , height , widht , this second 
+    method is used.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image1,
+        .image2,
+        .image3{
+            height: 300px;
+            width: 300px;
+            border: 3px solid orange;
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* background-position: 45% 0;*/
+        }
+        .image1{
+         background-image: url('https://www.shyamparivar.com/uploads/gallery/Hanuman-ji-HD-Wallpaper.jpg');
+        }
+        .image2{
+        background-image: url('https://w0.peakpx.com/wallpaper/942/648/HD-wallpaper-krishna-ji-ki-kanha-ji-black-background-lord-god.jpg');
+
+        }
+        .image3{
+        background-image: url('https://hindi.dekhnews.com/wp-content/uploads/2019/07/shivshankar.jpg');
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <img src="https://www.shyamparivar.com/uploads/gallery/Hanuman-ji-HD-Wallpaper.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://w0.peakpx.com/wallpaper/942/648/HD-wallpaper-krishna-ji-ki-kanha-ji-black-background-lord-god.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://hindi.dekhnews.com/wp-content/uploads/2019/07/shivshankar.jpg" alt="">
+    </div>
+     -->
+
+    <div class="image1"></div>
+    <div class="image2"></div>
+    <div class="image3"></div>
+</body>
+</html>

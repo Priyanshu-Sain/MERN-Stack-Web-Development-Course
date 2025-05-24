@@ -1,0 +1,37 @@
+.container{
+    display: grid;
+    width: 900px;
+    margin: auto;
+    border: 1px solid black;
+    /* grid-template-columns: 300px 300px 300px; */
+    /* grid-template-columns: repeat(3,300px); {Column ki width btane k liye} */
+    grid-template-columns: repeat(3,1fr); /*This means 1 fraction allot to 3 columns OR equal-equal 3 fractions of total width*/
+    grid-template-rows: 150px 150px 150px 150px; /*Rows ki height btane k liye*/
+    font-size: 24px;
+    grid-template-areas:
+    "one two two"
+    "one two two"
+    "three three four"
+    "five five five"; /*Agar table ka koi block aisa hai jahan koi child daalna hi nhi h
+    toh .(dot) lagado wo empty reh jayga*/
+}
+.child{
+    border: 1px solid blue;
+    text-align: center;
+    padding-top: 50px;
+}
+.child-1{
+    grid-area: one;
+}
+.child-2{
+    grid-area: two;
+}
+.child-3{
+    grid-area: three;
+}
+.child-4{
+    grid-area: four;
+}
+.child-5{
+    grid-area: five;
+}

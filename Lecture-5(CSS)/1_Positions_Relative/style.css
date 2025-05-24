@@ -1,0 +1,21 @@
+*{
+margin: 0;
+padding: 0;
+}
+.parent{
+    border: 2px solid red;
+    min-height: 400px;
+    padding: 10px;
+    margin: 50px;
+
+}
+.child{
+    width: 400px;
+    margin: auto;
+    border: 2px solid violet;
+    position: relative;
+    top: 100px; /* Isse element downward move karega apni relative position se*/
+    right: 180px;/* Isse element leftward move karega */
+
+
+}

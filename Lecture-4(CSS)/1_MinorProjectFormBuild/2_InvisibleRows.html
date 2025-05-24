@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisible Table Rows</title>
+    <style>
+        table {
+            width: 50%;
+            border: 2px solid red;
+            margin: 20px auto;
+        }
+        tr {
+            height: 30px; /* Set a height for the rows */
+        }
+        td {
+            border: 1px solid black; /* Border to make cells visible */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr></tr> <!-- First empty row -->
+        <tr></tr> <!-- Second empty row -->
+    </table>
+</body>
+</html>

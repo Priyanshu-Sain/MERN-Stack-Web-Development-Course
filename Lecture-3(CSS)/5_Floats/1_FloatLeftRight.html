@@ -1,0 +1,110 @@
+<!-- 
+* Understanding Float Concept :-
+  There are two floating orientations for an element i.e. left and right
+  1) If we float a child div in left orientation and float the another child in right
+     orientation , toh by geometry wo dono elements/div's parallel aa jane chahiye agar 
+     parent ki width se jyada width na le rhe ho toh..
+     BUT, one undesirable thing happens here :-
+     Jab dono elements float krke parallel aaye , toh wo geometrically to parallel aagye
+     par dono elements apni z-axis pe kuch distance aage bdh gye
+     Jisse ki , in elements ke parent ka plane alag hogya and in dono children ka plane alag hogya
+     SO?
+     -> Now , parent k andar koi child hai hi nhi..toh parent ki height kis use ki?...isliye
+        "PARENT COLLAPSED"
+  2) How to avoid this problem of PARENT COLLAPSING?
+  -> The "CLEARFIX" method is used here to avoid this
+     By clearfixing , the parent assumes that both children are stil within it but 
+     ab wo 2 width na leke bss ek hi width le rhe hain..to parent height ek child ki height
+     k equal ho jaygi and it will NOT COLLAPSE .
+
+  3) Now , clearfixing karne k bhi 2 methods hain :-
+     1) Parent element/div k andar two child div's hain..toh unke end me ek alag se 
+        div element bana do (i.e. block element bnado) , koi text daalne ki jrurt nhi h isme
+        bss block element se mtlb hai hume
+        And , uski class define upar karo in <style> and make clear : both
+     2) See in 4th part
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 5px solid orange;
+        }
+
+        .img {
+            float: left;
+            width: 20%;
+            /* border: 2px solid green; */
+        }
+
+        .clearfix{
+            clear: both;
+        }
+        .about-img {
+            float: right;
+            /* border: 2px solid red; */
+            width: 78%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="parent">
+        <img class="img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg/440px-Polar_Bear_-_Alaska_%28cropped%29.jpg"
+            alt="PolarBear">
+        <div class="about-img">
+            The polar bear (Ursus maritimus) is a large bear native to the Arctic and nearby areas. It is closely
+            related to the brown bear, and the two species can interbreed. The polar bear is the largest extant species
+            of bear and land carnivore, with adult males weighing 300–800 kg (660–1,760 lb).
+            The polar bear (Ursus maritimus) is a large bear native to the Arctic and nearby areas. It is closely
+            related to the brown bear, and the two species can interbreed. The polar bear is the largest extant species
+            of bear and land carnivore, with adult males weighing 300–800 kg (660–1,760 lb).
+            The polar bear (Ursus maritimus) is a large bear native to the Arctic and nearby areas. It is closely
+            related to the brown bear, and the two species can interbreed. The polar bear is the largest extant species
+            of bear and land carnivore, with adult males weighing 300–800 kg (660–1,760 lb).
+            India, officially the Republic of India (ISO: Bhārat Gaṇarājya),[22] is a country in South Asia. It is the
+            seventh-largest country by area; the most populous country as of June 2023;[23][24] and from the time of its
+            independence in 1947, the world's most populous democracy.[25][26][27] Bounded by the Indian Ocean on the
+            south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with
+            Pakistan to the west;[j] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In
+            the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands
+            share a maritime border with Thailand, Myanmar, and Indonesia.
+            India, officially the Republic of India (ISO: Bhārat Gaṇarājya),[22] is a country in South Asia. It is the
+            seventh-largest country by area; the most populous country as of June 2023;[23][24] and from the time of its
+            independence in 1947, the world's most populous democracy.[25][26][27] Bounded by the Indian Ocean on the
+            south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with
+            Pakistan to the west;[j] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In
+            the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands
+            share a maritime border with Thailand, Myanmar, and Indonesia.
+            India, officially the Republic of India (ISO: Bhārat Gaṇarājya),[22] is a country in South Asia. It is the
+            seventh-largest country by area; the most populous country as of June 2023;[23][24] and from the time of its
+            independence in 1947, the world's most populous democracy.[25][26][27] Bounded by the Indian Ocean on the
+            south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with
+            Pakistan to the west;[j] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In
+            the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands
+            share a maritime border with Thailand, Myanmar, and Indonesia.
+            India, officially the Republic of India (ISO: Bhārat Gaṇarājya),[22] is a country in South Asia. It is the
+            seventh-largest country by area; the most populous country as of June 2023;[23][24] and from the time of its
+            independence in 1947, the world's most populous democracy.[25][26][27] Bounded by the Indian Ocean on the
+            south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with
+            Pakistan to the west;[j] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In
+            the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands
+            share a maritime border with Thailand, Myanmar, and Indonesia.
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    
+</body>
+
+</html>

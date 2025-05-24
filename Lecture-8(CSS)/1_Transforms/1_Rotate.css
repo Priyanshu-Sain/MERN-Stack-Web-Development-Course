@@ -1,0 +1,30 @@
+*{
+    font-size: 35px;
+}
+.div{
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    background-color: orange;
+    border: 4px solid black;
+    transform: rotateZ(45deg);
+}
+.div1{
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    background-color: orange;
+    border: 4px solid black;
+    transform: rotateX(60deg);
+}
+.div2{
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    background-color: orange;
+    border: 4px solid black;
+    transform: rotateY(60deg);
+}

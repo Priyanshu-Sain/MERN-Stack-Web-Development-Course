@@ -1,0 +1,34 @@
+*{
+    font-size: 35px;
+}
+.div{
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    background-color: orange;
+    border: 4px solid black;
+    transform: scaleZ(2);
+}
+.div1{
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    background-color: orange;
+    border: 4px solid black;
+    transform: scaleX(2);
+    /* margin-bottom: 500px; */
+    z-index: 1;
+    position: relative;
+}
+.div2{
+    height: 500px;
+    width: 200px;
+    margin: auto;
+    margin-top: 150px;
+    background-color: orange;
+    border: 4px solid black;
+    transform: scaleY(2);
+    
+}

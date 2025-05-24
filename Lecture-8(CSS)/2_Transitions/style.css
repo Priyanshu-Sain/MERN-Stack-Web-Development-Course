@@ -1,0 +1,18 @@
+*{
+    font-size: 35px;
+}
+.div{
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    background-color: orange;
+    border: 4px solid black;
+    transition-duration: 10s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.div:hover{
+    transform: rotateZ(360deg);
+    background-color: blue;
+    border-radius: 50%;
+}

@@ -1,0 +1,42 @@
+<!--
+  ->radio will show text as options and only one of them can be selected
+  ->checkbox is used to select multiple options 
+  To make sure , only one option in the radio type options will be selected , 
+  group all the options together and assign the same values for their name attribute.
+  So , jitne bhi same name attribute wale options honge (radio type me) , unme se
+  koi ek hi select ho payega.
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Frontend</title>
+</head>
+<body>
+  <form action="#">
+    <h3>Which is not a Programming Language ?</h3>
+    <input type="radio">C++
+    <input type="radio">Python
+    <br>
+    <input type="radio">C#
+    <input type="radio">Hindi 
+<!--  AB YE NEECHE WALE OPTIONS ME SE EK HI SELECT HOGA NAME ATTRIBUTE LGA DIYA ISLIYE -->
+    <h3>Which is not a Programming Language ?</h3>
+    <input type="radio" name="programming">C++
+    <input type="radio" name="programming">Python
+    <br>
+    <input type="radio" name="programming">C#
+    <input type="radio" name="programming">Hindi 
+    
+    <h3>Which all are the Programming Languages ?</h3>
+    <input type="checkbox">English
+    <input type="checkbox">C++
+    <input type="checkbox">Java
+    <input type="checkbox">Python
+    <br>
+    <br>
+    <br>
+
+    <textarea name="introduction" cols="30" rows="5" placeholder="Write about yourself"></textarea>
+ </form> 
+</body>
+</html>
