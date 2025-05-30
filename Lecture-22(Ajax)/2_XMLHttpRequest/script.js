@@ -35,5 +35,6 @@ btn.addEventListener('click',()=>{
 --> JSON stands for JavaScript Object Notation.
 
 --> JSON is a lightweight data format used to store and exchange data between a server and a client (e.g., browser).
+--> Appending li in ul is done to add the data to our webpage. 
 
 */
