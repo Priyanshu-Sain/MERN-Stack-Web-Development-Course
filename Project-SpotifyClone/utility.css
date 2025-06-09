@@ -1,0 +1,9 @@
+.border{
+    /* border: 1px solid red; */
+}
+.invert{
+    filter: invert(1);
+}
+.white{
+    color: white;
+}
